@@ -106,6 +106,8 @@ const SignupWithPicturePage = (props) => {
   const { title } = props;
 
   const [activeStep, setActiveStep] = useState(0);
+  // const []
+
   //   const currentValidationSchema = validationSchema[activeStep];
   const isLastStep = activeStep === steps.length - 1;
   const isFirstStep = activeStep === 0;
@@ -142,7 +144,7 @@ const SignupWithPicturePage = (props) => {
 
   async function _submitForm(values, actions) {
     await _sleep(1000);
-    alert(JSON.stringify(values, null, 2));
+    // alert(JSON.stringify(values, null, 2));
     localStorage.setItem("point", values.point);
     localStorage.setItem("username", values.username);
     localStorage.setItem("email", values.email);
@@ -181,6 +183,24 @@ const SignupWithPicturePage = (props) => {
     </li>
   ));
 
+  const stepFormFields = [
+    ['username', 'email'], ['pictureUrl'], ['securityInfo']
+ ];
+
+  // check form has been fill text
+  const isSAllFormhasbeenFill = (values) => {
+    console.log(values);
+    let isAllFormhasbeenFill = true;
+    for (let key of stepFormFields[activeStep]) {
+      console.log(key, values[key]);
+      if (values[key].replace(/\s+/g, '') === '') {
+        return false;
+      }
+    }
+    return true;
+    
+  };
+  
   return (
     <>
       <Formik
@@ -229,6 +249,22 @@ const SignupWithPicturePage = (props) => {
                   disabled={isSubmitting}
                   type="submit"
                   id="next-button"
+                  onClick={(event) => {
+
+                    console.log(setFieldValue, values);
+                    if (isSAllFormhasbeenFill(values)) {
+                      
+                    } else {
+                      event.preventDefault();
+                      Swal.fire({
+                        title: "Error",
+                        text: "Please fill all form",
+                        icon: "error",
+                        confirmButtonText: "OK",
+                      });
+                    }
+                  }
+                  }
                   className="w-36 rounded-full border bg-blue-500 px-6 py-2 text-white hover:border-blue-500 hover:bg-transparent hover:text-blue-500 disabled:bg-gray-300"
                 >
                   {isLastStep ? "Submit" : "Next"}

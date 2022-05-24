@@ -20,7 +20,7 @@ function ChoosePoint(props) {
             max={7}
           />
         </div>
-        <div className="flex flex-col gap-4 ">
+        {/* <div className="flex flex-col gap-4 ">
           <label htmlFor="difficulty">Choose your difficulty:</label>
           <Field
             as="select"
@@ -32,7 +32,7 @@ function ChoosePoint(props) {
             <option value="medium">Medium</option>
             <option value="hard">Hard</option>
           </Field>
-        </div>
+        </div> */}
       </div>
     </>
   );
