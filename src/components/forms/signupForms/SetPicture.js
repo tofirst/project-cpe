@@ -69,7 +69,7 @@ const SetPicture = (props) => {
         <div className="flex flex-col items-start justify-center gap-3">
           {/* <h5 className="text-center text-3xl font-medium">{title}</h5> */}
           <h6 className="w-full text-center text-base ">
-            Click on the position where you have registered
+            Click the position you want to register
           </h6>
 
           <div

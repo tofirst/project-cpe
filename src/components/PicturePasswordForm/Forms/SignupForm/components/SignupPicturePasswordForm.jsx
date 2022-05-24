@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Formik, Form } from "formik";
-
+import "../../../../../styles/signupcss.css";
 import {
   SignupUsernameAndEmailForm,
   UploadPictureForm,
@@ -184,7 +184,7 @@ const SignupWithPicturePage = (props) => {
   ));
 
   const stepFormFields = [
-    ['username', 'email'], ['pictureUrl'], ['securityInfo']
+    ['username', 'email'], ['pictureUrl'], ['securityInfo'],['point'],['difficulty'],['secureQuestion'],['secureAnswer'],['password']
  ];
 
   // check form has been fill text
@@ -224,7 +224,7 @@ const SignupWithPicturePage = (props) => {
 
               <div className="mt-10 grid w-full grid-cols-2 items-center justify-center gap-6">
                 <div className="">
-                  <h6>Register Picture Password</h6>
+                  <h6 className="regis">Register Picture Password</h6>
                   <div className="grid grid-cols-1">
                     <ul className="col-span-5 mt-10 flex flex-col gap-10 text-gray-300">
                       {renderStepDescription}
@@ -269,6 +269,9 @@ const SignupWithPicturePage = (props) => {
                 >
                   {isLastStep ? "Submit" : "Next"}
                 </button>
+                {/* back to home page */}
+                <button className="w-36 rounded-full border bg-orange-500 px-6 py-2 text-white hover:border-blue-500 hover:bg-transparent hover:text-blue-500 disabled:bg-gray-300" onClick={() => window.location.href = "/"}>
+                  Home Page </button>
               </div>
             </div>
           </Form>

@@ -79,7 +79,7 @@ const SigninWithPicturePage = (props) => {
         <div className="flex flex-col items-start justify-center gap-3">
           {/* <h5 className="text-center text-3xl font-medium">{title}</h5> */}
           <h6 className="w-full text-center text-base ">
-            Click on the position where you have registered
+            Click the picture position you have registered
           </h6>
 
           <div
@@ -127,9 +127,11 @@ const SigninWithPicturePage = (props) => {
 
           <div className="flex h-full w-full flex-col justify-end  gap-3">
             <div className="flex w-full justify-center text-sm">
-              <a className="ml-1  text-blue-500 hover:underline" href="/">
+              {/* <a className="ml-1  text-blue-500 hover:underline" href="/">
                 Forgot password?
-              </a>
+              </a> */}
+              <button className="w-36 rounded-full border bg-orange-500 px-6 py-2 text-white hover:border-blue-500 hover:bg-transparent hover:text-blue-500 disabled:bg-gray-300" onClick={() => window.location.href = "/"}>
+                  Home Page </button>
             </div>
           </div>
         </div>

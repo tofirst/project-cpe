@@ -10,7 +10,7 @@ function ChoosePoint(props) {
     <>
       <div className="flex flex-col items-center justify-center gap-3">
         <div className="flex flex-col gap-4">
-          <label htmlFor="point">Choose point:</label>
+          <label htmlFor="point">Choose points:</label>
           <Field
             className="rounded-full w-48 px-3 py-2 border focus:border-blue-500"
             id={point.name}

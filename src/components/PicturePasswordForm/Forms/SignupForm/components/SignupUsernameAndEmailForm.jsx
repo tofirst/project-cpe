@@ -28,7 +28,7 @@ const SignupPage = (props) => {
       <div className="flex w-96 flex-col gap-4">
         <div id="login-form" className="mt-6 flex flex-col gap-6 text-[12px]">
           <div className="flex flex-col gap-3">
-            <label htmlFor="email">Email</label>
+            <label className="enu" htmlFor="email">Email</label>
             <Field
               type="email"
               id={email.name}
@@ -42,7 +42,7 @@ const SignupPage = (props) => {
               )} */}
           </div>
           <div className="flex flex-col gap-3">
-            <label htmlFor="username">Username</label>
+            <label className="enu" htmlFor="username">Username</label>
             <Field
               type="text"
               id={username.name}

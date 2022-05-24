@@ -9,10 +9,10 @@ const description = [
     title: "Choose the number of password points.",
   },
   {
-    title: "Click where you want to set a password.",
+    title: "Click position you want to set a password.",
   },
   {
-    title: "Click again where you want to set a password.",
+    title: "Click again to confirm a password.",
   },
 ];
 

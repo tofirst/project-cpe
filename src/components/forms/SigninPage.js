@@ -94,12 +94,12 @@ function SigninPage(props) {
               </div>
               <div className="flex h-full w-full flex-col justify-end  gap-3">
                 <div className="flex w-full justify-center text-sm">
-                  <span>Not registered yet?</span>
+                  <span>Not register yet?</span>
                   <a
                     href="/signup"
                     className="ml-1  text-blue-500 hover:underline"
                   >
-                    Create an account with Image password!
+                    Create an account with Image password
                   </a>
                 </div>
               </div>
