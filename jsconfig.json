@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src"
+  },
+  "exclude": ["node_modules", "build"],
+  "include": ["src"],
+  "paths": {
+    "crypto": ["node_modules/crypto-browserify"],
+    "stream": ["node_modules/stream-browserify"]
+  }
+}

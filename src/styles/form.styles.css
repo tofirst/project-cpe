@@ -1,0 +1,102 @@
+.form___container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+}
+
+
+.card__container {
+    width: 420px;
+    height: 300px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 20%);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.greeting__text {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+#username-field {
+    width: 100%;
+    height: 32px;
+    border-style: solid;
+    border-width: thin;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-color: #666;
+    background-color: transparent;
+    outline: none;
+    padding: 6px 10px;
+    padding-left: 0;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a.signup__link {
+    margin-left: 3px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+#login-form {
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px
+}
+
+.button__container {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    justify-content: end;
+
+}
+
+button {
+    width: 108px;
+    height: 28px;
+    border: none;
+    border-color: #0067b8;
+    background-color: #0067b8;
+    color: #fff;
+    font-weight: 300;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 4px 12px;
+}
+
+button:hover {
+    border-color: #005596;
+    background-color: #005596;
+}
+
+button#prev-button {
+    background-color: rgb(129, 129, 129);
+}
+
+button#prev-button:hover {
+    background-color: #666;
+}
+
+
+
+
